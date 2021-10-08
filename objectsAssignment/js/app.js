@@ -15,4 +15,4 @@ function draw(){
     circle(150,150,shape.height,shape.width)
 }
 
-console.log(shape.width)
+console.log(draw)
