@@ -1,17 +1,29 @@
 let dvSquare = document.getElementById("square")
-let squareWidth = "100px"
-let squareHeight = "100px"
 
 
-dvSquare.innerHTML = "square"
-dvSquare.style.backgroundColor =  "#6CFF33"
-dvSquare.style.width = squareWidth
-dvSquare.style.height = squareHeight
-dvSquare.style.margin = "auto"
+dvSquare.style.backgroundColor = "#00FF00";
+dvSquare.style.width = "100px";
+dvSquare.style.height = "100px";
 
+function hoverSquare() {
+    let change = "BLACK"
+    let off = "GREEN"
+    let width = "100px";
+    let height = "100px";
+    if (onmouseover) 
+    dvSquare.innerHTML ="BLACK"    
+    
 
-function square(id){
-    if(mousePressed){
-        squareWidth = squareWidth + 10;
+    if  (change == "BLACK") {
+        dvSquare.style.backgroundColor = "#000000";
+
+    } 
+}
+function offSquare() {
+if (onmouseout == hoverSquare())
+dvSquare.innerHTML = "GREEN" 
+
+if (off == "GREEN"){
+    dvSquare.style.backgroundColor = "#00FF00";
 }
 }
