@@ -1,22 +1,11 @@
 let dvSquare = document.getElementById("square")
 
+dvSquare.style.width = "20px"
+dvSquare.style.height = "20px"
+dvSquare.style.backgroundColor = "#0000FF" 
+function multiplySquare() {
+  for(i = 0; i < 101; i++){
+   dvSquare(20(i),20,10)
 
-dvSquare.innerHTML="ICE";
-dvSquare.style.backgroundColor = "#00FF00";
-dvSquare.style.width = "100px";
-dvSquare.style.height = "100px";
-
-function pressSquare() {
-    let width = Math.random();
-    let height = "heads";
-    if(width > .5) height ="heads"
-    dvSquare.innerHTML = height;
-    
-    if (height == "heads"){
-        dvSquare.style.backgroundColor = "#eb5634";
-
-    } else {
-        dvSquare.style.backgroundColor = "#00FF00"
-    }
-
+  }
 }

@@ -20,10 +20,11 @@ function hoverSquare() {
     } 
 }
 function offSquare() {
-if (onmouseout == hoverSquare())
-dvSquare.innerHTML = "GREEN" 
+if (onmouseout)
+dvSquare.innerHTML = "GREEN"
 
 if (off == "GREEN"){
-    dvSquare.style.backgroundColor = "#00FF00";
+dvSquare.style.backgroundColor = "#00FF00";
 }
+
 }
