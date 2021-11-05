@@ -1,10 +1,10 @@
+let random = Math.floor(Math.random() * 11)
 
 function randomNumber(){
- let random = 1 + Math.floor(Math.random() * 10)
-
+return random
 }
 
-function generate(random){
+function generate(){
     randomNumber();
 }
 generate();
