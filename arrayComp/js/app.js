@@ -14,10 +14,11 @@ let average = 0
 for(let i = 0; i < numberArray.length; i++){
     sum +=Number(numberArray[i]);
     average = sum / numberArray.length
-    break
+
 }
 
 
 
-dvText.innerHTML = "Average:" + average + "Sum:" + sum
+
+dvText.innerHTML = "Average:" + average +  "<br/>" +  "Sum:" + sum
 }
