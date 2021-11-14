@@ -7,6 +7,11 @@ let wordArray = stringwords.split (" ")
 
 let badWords = [ "Clear" , "Water" , "Tires" ]
 
-dvText.innerHTML = "We Have Found" + total + "Bad Words"
-console.log(total)
+var element = badWords.find( function(item) {
+    return item == "Clear" + "Water" + "Tires"
+})
+
+dvText.innerHTML = "We Have Found" + element + "Bad Words"
+console.log(element);
+
 }

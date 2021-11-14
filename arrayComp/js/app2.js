@@ -8,7 +8,7 @@ let wordArray = stringwords.split (" ")
 
 let badWords = [ "Clear" , "Water" , "Tires" ]
 let total = 0
-for(i =  0; i > wordArray.length; i++){
+for(i =  0; i < wordArray.length; i++){
     if (wordArray == badWords){
        total = total + 1
     }
