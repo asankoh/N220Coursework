@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .cards {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            float: left;
+        }
+    </style>
 </head>
+
 <body>
+<button onclick="press()" data-attribute="Indianapolis"></button>
+<div class="cards" onclick="itsChange(event)" data-question="What's the Capital of Indiana?"></div>   
+<div class="cards" onclick="itsChange(event)" data-question="What does JS Stand For?"></div>   
+<div class="cards" onclick="itsChange(event)" data-question="Is Kingdom Hearts the Best Franchise?"></div>   
 
-    <div id="eventChange" data-color="Change!">What's the Capital of Indiana?</div>
-    <div id="eventChange" data-color="Change!">Oh!</div>
-    <div id="eventChange" data-color="Change!">Wow!</div>
-
-    <div onclick="itsChange(event)" data-response="Wow!">Click</div>
     <script src="js/app3.js"></script>
 </body>
 </html>

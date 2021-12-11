@@ -1,14 +1,13 @@
-let colorChange = document.getElementById("eventChange");
-colorChange.addEventListener("click", itsChange);
-for(var i = 0; i < 3; i++){
-    colorChange.style.width = "200px" 
-    colorChange.style.height = "200px"
-    colorChange.style.backgroundColor = "#0000FF"
-    colorChange.style.margin = "5px"
-    }
-
-function itsChange(event){
-colorChange.style.backgroundColor = "#FFFFFF"
-colorChange.innerHTML = "Indianapolis"
+let cardDiv = document.querySelectorAll("cards")
+for (let i = 0; i < cardDiv.length; i++){
+cardDiv.addEventListener("click", itsChange);
 }
 
+
+function press(){
+    
+}
+
+function itsChange(event){
+    event.target.innerHTML = event.target.dataset.question;
+}
