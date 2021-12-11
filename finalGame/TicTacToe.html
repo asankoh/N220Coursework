@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<style>
+    #gameOver{
+    display:none;
+    font-size: 30px;
+}
+#gameContainer{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.square{
+   border:5px solid black; 
+   resize: none;
+   width:30%;
+   height:35%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.square p{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{text-align: center;}
+
+.notClicked:hover{
+    background-color: goldenrod;
+}
+</style>
+<body>
+    <h1>Tic Tac Toe : Credit to JavaScript Academy</h1>
+    <div id='gameContainer'></div>
+    <div id='gameOver'>
+        <p>Game over, <span id='winner'></span></p>
+    </div>
+    <script src= js/app3.js></script>
+</body>
+</html>
