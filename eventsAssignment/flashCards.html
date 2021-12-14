@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .cards {
-            width: 100px;
-            height: 100px;
+        #cards {
+            width: 300px;
+            height: 200px;
             border: 3px solid black;
             float: left;
         }
+
+
     </style>
 </head>
 
 <body>
-<button onclick="press()" data-attribute="Indianapolis"></button>
-<div class="cards" onclick="itsChange(event)" data-question="What's the Capital of Indiana?"></div>   
-<div class="cards" onclick="itsChange(event)" data-question="What does JS Stand For?"></div>   
-<div class="cards" onclick="itsChange(event)" data-question="Is Kingdom Hearts the Best Franchise?"></div>   
+<div id="cards"></div>
+<button id="button1" data-question="JavaScript" onclick="flashCards(event)">What does JS Stand for?</button>
+<button id="button2" data-question="Indianapolis" onclick="flashCards(event)">What City does the Colts play for?</button>
+<button id="button3" data-question="The Best Game to Exist!" onclick="flashCards(event)">Kingdom Hearts is what?</button>
 
-    <script src="js/app3.js"></script>
+
+<script src="js/app3.js"></script>
 </body>
 </html>

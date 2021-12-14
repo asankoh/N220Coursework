@@ -1,13 +1,11 @@
-let colorChange = document.getElementById("eventChange");
-colorChange.addEventListener("click", itsChange);
-for(var i = 0; i < 3; i++){
-    colorChange.style.width = "500px" 
-    colorChange.style.height = "200px"
-    colorChange.style.backgroundColor = "#0000FF"
-    colorChange.style.margin = "5px"
-    }
+let red = 0;
+let green = 0;
+let blue = 0;
 
-function itsChange(event){
-colorChange.style.backgroundColor = "#FFFFFF"
-}
-
+function changeColor(event) {
+    let color = event.target.getAttribute("data-color");
+    let number = Number(event.target.getAttribute("data-number"));
+   
+    document.getElementById("colorBox").style.backgroundColor = `rgb(${red},${green},${blue})`;
+       
+  }

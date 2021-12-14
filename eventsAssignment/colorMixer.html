@@ -1,16 +1,42 @@
+nes (162 sloc)  4.68 KB
+   
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Mixer</title>
+    <style>
+        #colorBox {
+            width: 600px;            
+            height: 100px;
+            background-color: black;
+             
+        }
+      
+    </style>
 </head>
 <body>
 
-    <div id="eventChange" data-color="Change!">Click</div>
+    <div id= "colorBox"></div>
+        <div id="red">Red: </div>
+        <button class="btn1" data-color = "red" data-number = 1 onclick= "changeColor()">+1</button>
+        <button class="btn2" data-color = "red" data-number = 5 onclick= "changeColor()">+5</button>
+        <button class="btn3" data-color = "red" data-number = 10 onclick= "changeColor()">+10</button>
+        
+        <div id="green">Green:  </div>
+        <button class="btn4" data-color = "green" data-number = 1 onclick= "changeColor()">+1</button>
+        <button class="btn5" data-color = "green" data-number = 5 onclick= "changeColor()">+5</button>
+        <button class="btn6" data-color = "green" data-number = 10 onclick= "changeColor()">+10</button>
+       
+        <div id="blue">Blue: </div>
+        <button class="btn7" data-color = "blue" data-number = 1 onclick= "changeColor()">+1</button>
+        <button class="btn8" data-color = "blue" data-number = 5 onclick= "changeColor()">+5</button>
+        <button class="btn9" data-color = "blue" data-number = 10 onclick= "changeColor()">+10</button>
+        
+    </div>
 
-    <div onclick="itsChange(event)" data-response="Wow!">Click</div>
-    <script src="js/app3.js"></script>
+
+    <script src="js/app4.js"> </script>
 </body>
 </html>
