@@ -14,10 +14,10 @@ for(i =  0; i < words.length; i++){
         }   
     } 
     if(total == 0){
-        dvText.innerHTML = "No bad words found "; 
+        dvText.innerHTML = "No bad words found! :) "; 
     }
     else{
-        dvText.innerHTML = `Yes there was bad words found a total of ${total} words found. `;
+        dvText.innerHTML = `Yes ${total} bad words were found. `;
     }
 }
 console.log(dvText.value)
